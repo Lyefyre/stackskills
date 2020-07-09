@@ -3,6 +3,7 @@
 
     <div class="col-sm-6 card edit-area">
       <cc-text-input @displayTextChanged="textBoxValue1 = $event"></cc-text-input>
+      <cc-section-completed></cc-section-completed>
     </div>
 
     <div class="col-sm-6 card edit-display">
@@ -14,6 +15,7 @@
 <script>
 import TextInput from "./TextInput";
 import TextOutput from "./TextOutput";
+import SectionCompleted from './SectionCompleted'
 
 export default {
   data: function() {
@@ -23,7 +25,8 @@ export default {
   },
   components: {
     ccTextInput: TextInput,
-    ccTextOutput: TextOutput
+    ccTextOutput: TextOutput,
+    ccSectionCompleted: SectionCompleted
   }
 };
 </script>
